@@ -4,7 +4,7 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/((?!assets/|.*\\.(?:ico|png|svg|jpg|jpeg|gif|webp|mp4|webm|pdf|json|js|css|woff2|woff|ttf|map)).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ],
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.(?:png|jpg|jpeg|svg|webp|ico|gif)",
+      "source": "/(.*)\\.(png|jpg|jpeg|svg|webp|ico|gif)",
       "headers": [
         {
           "key": "Cache-Control",
